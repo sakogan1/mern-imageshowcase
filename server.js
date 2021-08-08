@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const PORT = process.env.PORT || 5000
 const app = express()
 
-const Routes = require('./backend/routes/Routes')
+const Routes = require('./backend/Routes/Routes')
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
