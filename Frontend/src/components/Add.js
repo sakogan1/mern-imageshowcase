@@ -13,7 +13,7 @@ const Add = () => {
     }
     const savePicture = () => {
         axios.post('/api', inputs)
-            .then(result => window.location.href = result.data.redirect)
+            .then(result => window.location.href = "/picture/"+ result.data._id)
             .catch(err => console.log(err))
     }
     return (
