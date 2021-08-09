@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const PORT = process.env.PORT || 5000
 const app = express()
 
-const Routes = require('./backend/Routes/Routes')
+const Routes = require('./Backend/Routes/Routes')
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
@@ -17,4 +17,4 @@ mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology
     .catch(err => console.log(err))
 
 app.use('/api', Routes)
-app.use('/', Routes)
+// app.use('/', Routes)
