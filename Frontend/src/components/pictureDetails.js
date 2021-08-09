@@ -26,7 +26,7 @@ const PictureDetails = () => {
                 setInputs(result.data)
             })
             .catch(err => console.log(err))
-    }, [id])
+    }, [])
     const deletePicture = () => {
         axios.delete(`/api/${id}`)
             .then(result => window.location.href = result.data.redirect)
@@ -35,7 +35,7 @@ const PictureDetails = () => {
     const updatePicture = () => {
         axios.put(`/api/${id}`, inputs)
         
-            .then(result => window.location.href = result.data._id)
+            .then(result => window.location.href = result.data.redirect)
            
             .catch(err => console.log(err))
     }
