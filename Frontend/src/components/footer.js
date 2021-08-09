@@ -33,7 +33,7 @@ const Footer = () => {
   
     <div class="text-center p-3" >
       © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">ImageShowcase</a>
+      <a class="text-white" href="/">ImageShowcase</a>
     </div>
   </footer> );
 }

@@ -4,7 +4,6 @@ import  { useEffect, useState } from 'react';
 const Home = () => {
  const [Picture, setPicture] = useState(null)
     useEffect(() => {
-       
         axios.get(`/api`)
             .then(result => {
                 setPicture(result.data)
@@ -29,12 +28,7 @@ const Home = () => {
                               {Picture.Author}   
 
 </div>
-
-        
-        
-       
     </div>
-   
 ))}</div>
   </div>
 

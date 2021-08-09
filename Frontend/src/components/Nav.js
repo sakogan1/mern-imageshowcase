@@ -5,9 +5,7 @@ import {
 
 const Nav = () => {
     return (
-        <nav class="navbar navbar-dark bg-dark">
-    
-    
+        <nav class="navbar navbar-dark bg-dark"> 
     <nav>
             <ul>
                 <li>
@@ -22,11 +20,6 @@ const Nav = () => {
             </ul>
         </nav>
 </nav>
-        
-        
-        
-        
-    
     );
 }
 
