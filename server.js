@@ -3,11 +3,13 @@ const express = require('express')
 const mongoose = require('mongoose')
 const PORT = process.env.PORT || 5000
 const app = express()
+const bodyParser = require('body-parser')
 
 const Routes = require('./Backend/Routes/Routes')
 app.use(express.static("./Frontend/build"))
 app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+app.use(bodyParser.urlencoded({ extended: true }))
+
 
 
 mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
