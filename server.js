@@ -21,5 +21,5 @@ mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology
 app.use('/api', Routes)
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'frontend', 'build', 'index.html'))
+    res.sendFile(path.join(__dirname, 'Frontend', 'build', 'index.html'))
 })
