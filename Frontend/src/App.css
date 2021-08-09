@@ -43,7 +43,9 @@ li,a{
   justify-content: flex-start;
   color: #fff;
   overflow-x: scroll;
+
 }
+
 .GalleryImage{
   width: 20vw;
   margin: 2vw;
