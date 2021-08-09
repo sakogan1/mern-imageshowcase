@@ -34,7 +34,9 @@ const PictureDetails = () => {
     }
     const updatePicture = () => {
         axios.put(`/api/${id}`, inputs)
-            .then(result => window.location.href = result.data.redirect)
+        
+            .then(result => window.location.href = result.data._id)
+           
             .catch(err => console.log(err))
     }
     return (
