@@ -161,4 +161,7 @@ a{
   #Author{
 margin-top: 0;
   }
+  .GalleryImage{
+    margin-top: 1vh;
+  }
 }
