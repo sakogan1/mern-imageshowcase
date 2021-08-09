@@ -18,7 +18,7 @@ const Gallery = () => {
             {data && (data.map(picture => <div key={picture._id}>
                 <div className="AuthorImage"><img src={picture.authorImageUrl} alt={picture.authorImageUrl} /></div>
                 <h3>
-                    <Link to={`/picture/${picture._id}`}>
+                    <Link to={`/api/${picture._id}`}>
                         {picture.name}
                     </Link>
                 </h3>
